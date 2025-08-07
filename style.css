@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 70px;
+    background-color: azure;
+}
+
+form {
+    width: 30%;
+}
+
+.navbar {
+    z-index: 1000;
+    background: linear-gradient(rgb(42, 1, 81), rgb(147, 29, 243));
+
+}
+
+.navbar-brand {
+    color: azure;
+    font-size: 30px;
+    transform: scale(1);
+    transition-duration: .5s;
+}
+
+.navbar-brand:hover {
+    color: azure;
+    transform: scale(1.1);
+}
+
+.navbar-brand i {
+    transform: rotate(0deg);
+    transition-duration: 1s;
+}
+
+.navbar-brand:hover i {
+    transform: rotate(360deg);
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(42, 1, 81), rgb(147, 29, 243));
+    background-clip: text;
+    text-shadow: 5px 5px 15px;
+}
+
+
+.nav-link {
+    transition-duration: .3s;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 0px;
+    background-color: white;
+    height: 2px;
+    width: 0px;
+    transition-duration: .3s;
+}
+
+.nav-link:hover {
+    text-shadow: 1px 1px 5px;
+}
+
+.nav-link:hover::after {
+    width: 90%;
+}
+
+.heroSection {
+    /* background: linear-gradient( rgb(42, 1, 81), rgb(147, 29, 243), rgb(42, 1, 81)); */
+    background-image: url(clothing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 35%;
+}
+
+.heroSection h1 {
+    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
+    font-weight: 900;
+}
+
+.heroSection h4 {
+    font-size: 20px;
+    color: azure;
+    font-weight: 800;
+    text-shadow: 5px 5px 10px black;
+
+}
+
+.heroSection p {
+    text-shadow: 5px 5px 10px black;
+    font-weight: 500;
+}
+
+.heroSection h6 {
+    font-weight: 400;
+}
+
+.heroSection button {
+    box-shadow: 5px 5px 10px 3px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.heroSection button:hover {
+    transform: scale(1.1);
+}
+
+.swiper {
+    width: 100%;
+    height: 80%;
+}
+
+.swiper h2 {
+    background: linear-gradient(rgb(42, 1, 81), rgb(174, 135, 241));
+    color: transparent;
+    background-clip: text;
+    transform: scale(1);
+    transition-duration: .3s;
+}
+
+.swiper h2:hover {
+    text-shadow: 3px 3px 10px rgb(164, 160, 160);
+    transform: scale(1.1);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .card .card-img-top {
+    height: 60%;
+    object-fit: cover;
+}
+
+.swiper-slide .card {
+    height: 91%;
+}
+
+
+footer {
+    background: linear-gradient(rgb(42, 1, 81), rgb(147, 29, 243), rgb(42, 1, 81));
+}
+
+.btnn {
+    background-color: rgb(42, 1, 81);
+}
+
+.btnn:hover {
+    background-color: rgb(147, 29, 243);
+}
+
+.btnn i {
+    transform: translateX(0);
+    transition-duration: .5s;
+}
+
+.btnn:hover i {
+    transform: translateX(5px);
+}
+
+.aboutSection {
+    background: linear-gradient(rgb(42, 1, 81), rgb(147, 29, 243), rgb(42, 1, 81));
+    padding: 100px;
+    height: 100%;
+}
+
+.aboutSection h1 {
+    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
+    position: relative;
+}
+
+.aboutSection h1::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition-duration: .5s;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.aboutSection h1:hover::after {
+    width: 30%;
+}
+
+.aboutSection p {
+    font-size: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(216, 185, 242);
+    width: 100%;
+
+}
+
+.card-img-top {
+    object-fit: cover;
+     height: 300px;
+}
+
+.card .btn {
+    color: rgb(192, 163, 215);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.container h3 {
+    background: linear-gradient(rgb(42, 1, 81), rgb(174, 135, 241));
+    color: transparent;
+    background-clip: text;
+    transition-duration: .3s;
+    position: relative;
+}
+
+.container h3:hover {
+    text-shadow: 3px 3px 10px rgb(164, 160, 160);
+}
+
+.container h3::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: rgb(108, 70, 173);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition-duration: .5s;
+    border-radius: 10px;
+}
+
+.container h3:hover::after {
+    width: 75px;
+    box-shadow: 1px 1px 5px 2px rgb(129, 128, 128);
+}
+
+.viewCartBtn {
+    background-color: blueviolet;
+}
+
+.viewCartBtn:hover {
+    background-color: rgb(115, 69, 159);
+}
+
+.viewCartBtn i {
+    transform: rotate(0deg);
+    transition-duration: .8s;
+}
+
+.viewCartBtn:hover i {
+    transform: rotate(360deg);
+}
+
+.termsSection {
+    background: linear-gradient(rgb(42, 1, 81), rgb(147, 29, 243), rgb(42, 1, 81));
+    padding: 100px;
+    height: 100%;
+}
+
+.termsSection h1 {
+    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
+    position: relative;
+}
+
+.termsSection h1::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition-duration: .5s;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.termsSection h1:hover::after {
+    width: 30%;
+}
+
+.termsSection p {
+    font-size: 20px;
+}
+
+.termsSection ul{
+    color: white;
+    font-size: 20px;
+}

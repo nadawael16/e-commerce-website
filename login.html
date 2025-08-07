@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Login</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center bg-body-secondary">
+    <form class="border border-primary-subtle p-5 rounded-4 bg-light" id="loginForm">
+        <div class="mb-3">
+            <h2>Login</h2>
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+        </div>
+        <div class="mb-3">
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+            <br><br>
+            <p>Don't have an account?   <a id="toSignup" href="#">Sign Up</a></p>
+        </div>
+        <button type="submit" class="btn btn-primary" id="loginBtn">Login</button>
+    </form>
+
+    <form class="border border-primary-subtle p-5 rounded-4 bg-light" id="signupForm">
+        <div class="mb-3">
+            <h2>Sign Up</h2>
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2">
+        </div>
+        <div class="mb-3">
+            <p>Already have an account?   <a id="toLogin" href="#">Login</a></p>
+        </div>
+        <button type="submit" class="btn btn-primary" id="signupBtn">Sign Up</button>
+    </form>
+    
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

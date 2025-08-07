@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Products</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5 fw-bold" href="#"> <i class="fa-solid fa-shirt"></i> StyleZone</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search products" id="searchInput"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative text-light" aria-current="page" href="index.html"
+                                id="homePage">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative  protected-link text-light"
+                                href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative protected-link text-light" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative protected-link text-light" href="addProduct.html">Add
+                                Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative text-light" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative text-light" href="#" id="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container mt-5">
+
+            <div class="swiper mySwiper mb-5" id="shirtsSwiper">
+                <h2 class="mx-5 mb-3 text-center">Shirts</h2>
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="swiper mySwiper mb-5" id="trousersSwiper">
+                <h2 class="mx-5 mb-3 text-center">Trousers</h2>
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper mySwiper mb-5" id="jeansSwiper">
+                <h2 class="mx-5 mb-3 text-center">Jeans</h2>
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper mySwiper mb-5" id="skirtsSwiper">
+                <h2 class="mx-5 mb-3 text-center">Skirts</h2>
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper mySwiper mb-5" id="scarvesSwiper">
+                <h2 class="mx-5 mb-3 text-center">Scarves</h2>
+                <div class="swiper-wrapper">
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="text-center">
+                <a class="btn mb-5 mt-3 text-light py-2 rounded-4 p-4 viewCartBtn" href="cart.html" role="button"><i
+                        class="fa-solid fa-cart-shopping me-1"></i> View Cart</a>
+            </div>
+
+
+        </div>
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="products.js"></script>
+    <script>
+        var swiper = new Swiper("#shirtsSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: "#shirtsSwiper .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper("#trousersSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: "#trousersSwiper .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper("#jeansSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: "#jeansSwiper .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper("#skirtsSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: "#skirtSwiper .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper("#scarvesSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+                el: "#scarvesSwiper .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
