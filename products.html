@@ -19,18 +19,18 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex ms-auto" id="searchForm">
-                    <input class="form-control me-2" type="search" placeholder="Search products" id="searchInput"
-                        aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                        <input class="form-control me-2" type="search" placeholder="Search products" id="searchInput"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
                         <li class="nav-item">
-                            <a class="nav-link active position-relative text-light" aria-current="page" href="index.html"
-                                id="homePage">Home</a>
+                            <a class="nav-link active position-relative text-light" aria-current="page"
+                                href="index.html" id="homePage">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link position-relative  protected-link text-light"
@@ -56,7 +56,7 @@
     </header>
     <main>
 
-        <div class="container mt-5">
+        <div class="mt-5 p-2">
 
             <div class="swiper mySwiper mb-5" id="shirtsSwiper">
                 <h2 class="mx-5 mb-3 text-center">Shirts</h2>
@@ -106,7 +106,7 @@
 
 
         </div>
-        
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -116,12 +116,27 @@
         var swiper = new Swiper("#shirtsSwiper", {
             slidesPerView: 4,
             spaceBetween: 30,
-            centeredSlides: true,
+            centeredSlides: false,
             pagination: {
                 el: "#shirtsSwiper .swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: { // Mobile phones
+                    slidesPerView: 1
+                },
+                576: { // Small tablets
+                    slidesPerView: 2
+                },
+                992: { // Laptops
+                    slidesPerView: 3
+                },
+                1200: { // Desktops
+                    slidesPerView: 4
+                }
+            }
         });
+
     </script>
     <script>
         var swiper = new Swiper("#trousersSwiper", {
@@ -132,6 +147,20 @@
                 el: "#trousersSwiper .swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: { // Mobile phones
+                    slidesPerView: 1
+                },
+                576: { // Small tablets
+                    slidesPerView: 2
+                },
+                992: { // Laptops
+                    slidesPerView: 3
+                },
+                1200: { // Desktops
+                    slidesPerView: 4
+                }
+            }
         });
     </script>
     <script>
@@ -143,6 +172,20 @@
                 el: "#jeansSwiper .swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: { // Mobile phones
+                    slidesPerView: 1
+                },
+                576: { // Small tablets
+                    slidesPerView: 2
+                },
+                992: { // Laptops
+                    slidesPerView: 3
+                },
+                1200: { // Desktops
+                    slidesPerView: 4
+                }
+            }
         });
     </script>
     <script>
@@ -154,6 +197,20 @@
                 el: "#skirtSwiper .swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: { // Mobile phones
+                    slidesPerView: 1
+                },
+                576: { // Small tablets
+                    slidesPerView: 2
+                },
+                992: { // Laptops
+                    slidesPerView: 3
+                },
+                1200: { // Desktops
+                    slidesPerView: 4
+                }
+            }
         });
     </script>
     <script>
@@ -165,6 +222,20 @@
                 el: "#scarvesSwiper .swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: { // Mobile phones
+                    slidesPerView: 1
+                },
+                576: { // Small tablets
+                    slidesPerView: 2
+                },
+                992: { // Laptops
+                    slidesPerView: 3
+                },
+                1200: { // Desktops
+                    slidesPerView: 4
+                }
+            }
         });
     </script>
 </body>
