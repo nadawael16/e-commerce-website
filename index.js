@@ -1,4 +1,3 @@
-localStorage.removeItem("isLoggedIn");
 const isLoggedIn = localStorage.getItem("isLoggedIn");
 
 window.onload = function () {
@@ -62,3 +61,4 @@ logout.addEventListener("click", function (e) {
 
 
 }) 
+
